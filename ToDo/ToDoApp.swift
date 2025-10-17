@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct ToDoApp: App {
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    @AppStorage("isLoggedIn") private var isLoggedIn = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !hasSeenOnboarding {
+                OnboardingView()
+            } else if !isLoggedIn {
+                LoginView()
+            } else {
+                ContentView()
+            }
         }
     }
 }

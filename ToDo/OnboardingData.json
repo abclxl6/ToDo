@@ -1,0 +1,17 @@
+[
+    {
+        "image": "onboarding1",
+        "title": "高效管理任务",
+        "description": "快速添加、分类与提醒..."
+    },
+    {
+        "image": "onboarding2",
+        "title": "智能统计",
+        "description": "清晰掌握完成率..."
+    },
+    {
+        "image": "onboarding3",
+        "title": "轻松同步",
+        "description": "数据自动同步..."
+    }
+]
