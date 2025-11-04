@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import Factory
 
 @main
 struct ToDoApp: App {
     @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
-    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    @InjectedObject(\.authenticationViewModel) var authViewModel
+    init() {
+            FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             if !hasSeenOnboarding {
                 OnboardingView()
-            } else if !isLoggedIn {
+            } else if authViewModel.user == nil {
                 LoginView()
             } else {
                 ContentView()

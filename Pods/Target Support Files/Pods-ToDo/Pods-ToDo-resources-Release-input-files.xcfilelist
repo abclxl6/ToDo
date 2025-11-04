@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-ToDo/Pods-ToDo-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/Factory/Factory.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/PrivacyInfo.xcprivacy

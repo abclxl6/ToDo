@@ -8,10 +8,16 @@
 import Foundation
 
 struct onboardingPage: Codable,Identifiable {
-    let id = UUID()
+    var id = UUID()
     let image: String
     let title: String
     let description: String
+    
+    enum CodingKeys: String,CodingKey {
+        case image
+        case title
+        case description
+    }
     
     static func loadFromJSON() -> [onboardingPage] {
         guard let url = Bundle.main.url(forResource: "OnboardingData", withExtension: "json"),

@@ -7,7 +7,7 @@
 import Foundation
 
 struct FeaturePage: Codable,Identifiable {
-    let id = UUID()
+    var id = UUID()
     let image: String
     let description: String
 }

@@ -14,6 +14,9 @@ struct OnboardingView: View {
     private let pages = onboardingPage.loadFromJSON()
     
     var body: some View {
+//        let _ = print("📄 Loaded pages count: \(pages.count)")
+//        let _ = pages.enumerated().forEach { print("Page \($0): \($1.image), \($1.title)") }
+      
         ZStack(alignment: .topTrailing) {
             Color(.systemBackground)
                 .ignoresSafeArea()
@@ -45,8 +48,10 @@ struct OnboardingView: View {
                             Image(pages[index].image)
                                 .resizable()
                                 .scaledToFit()
+//                                .scaledToFill()
+//                                .aspectRatio(contentMode: .fill)
                                 .frame(height: 280)
-                                .padding(.horizontal, 20)
+                                .clipped()
                             Text(pages[index].title)
                                 .font(.title.bold())
                                 .foregroundStyle(.black)
@@ -60,6 +65,7 @@ struct OnboardingView: View {
 
                     }
                 }
+                .frame(height: 450)
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .animation(.easeInOut, value: currentPage)
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))

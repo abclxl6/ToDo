@@ -1,0 +1,32 @@
+PODS:
+  - Factory (2.5.2)
+  - SDWebImage (5.21.3):
+    - SDWebImage/Core (= 5.21.3)
+  - SDWebImage/Core (5.21.3)
+  - SDWebImageSwiftUI (3.1.3):
+    - SDWebImage (~> 5.10)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+
+DEPENDENCIES:
+  - Factory
+  - SDWebImageSwiftUI
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - Factory
+    - SDWebImage
+    - SDWebImageSwiftUI
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Factory: bfc0d3ec51e8f1b0c91e715ea9b541bb2e1a6f85
+  SDWebImage: 16309af6d214ba3f77a7c6f6fdda888cb313a50a
+  SDWebImageSwiftUI: a6d7129fb68fc18c8b930b869ddcfce314e49ded
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+
+PODFILE CHECKSUM: 3d812604385ba0fb60a0062aeeb430216d4b9583
+
+COCOAPODS: 1.16.2
